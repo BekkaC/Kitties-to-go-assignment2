@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="kitties.css">
+    <title>Kitties to go</title>
+    <script>
+      function toggleMenu() {
+          var menu = document.getElementById("menu");
+          var button = document.querySelector("[aria-controls='menu']");
+
+          var expanded = button.getAttribute("aria-expanded") === "true";
+          var hidden = menu.getAttribute("aria-hidden") === "true";
+
+          button.setAttribute("aria-expanded", !expanded);
+          menu.setAttribute("aria-hidden", !hidden);
+      }
+  </script>
+ 
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <button aria-expanded="false" aria-controls="menu" onclick="toggleMenu()">Toggle Menu</button>
+        <ul id="menu" aria-hidden="true"> 
+            <li><a href="#" tabindex="0">Home</a></li>
+            <li><a href="types-of-cats.html" tabindex="0">Types of Cats</a></li>
+            <li><a href="types-of-cats.html" tabindex="0">What cats eat</a></li>
+        </ul>
+    </nav>
+  
+    <div class="main-content">
+      <div class="background-container">
+        <img src="lesson04-mock2-banner-image.jpg" alt="Green eyes of a brown and black and white cat">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Suscipit adipiscing bibendum est ultricies integer quis auctor. Ante in nibh mauris cursus mattis molestie a iaculis. Lobortis mattis aliquam faucibus purus. Arcu dictum varius duis at consectetur lorem donec massa sapien. Porta lorem mollis aliquam ut porttitor leo a diam. Sit amet commodo nulla facilisi nullam. Faucibus vitae aliquet nec ullamcorper. Netus et malesuada fames ac turpis egestas. Scelerisque purus semper eget duis at tellus at urna. Elementum nisi quis eleifend quam adipiscing vitae proin sagittis nisl. Sagittis orci a scelerisque purus. Ac placerat vestibulum lectus mauris ultrices eros. Ornare arcu odio ut sem nulla.</p>
+        <p>Fusce ut placerat orci nulla pellentesque dignissim. Mus mauris vitae ultricies leo integer malesuada nunc vel risus. Cras fermentum odio eu feugiat. Quam adipiscing vitae proin sagittis. In hendrerit gravida rutrum quisque. At consectetur lorem donec massa sapien faucibus et molestie. Laoreet id donec ultrices tincidunt arcu non sodales. Et tortor consequat id porta nibh venenatis. Orci ac auctor augue mauris augue. Nibh mauris cursus mattis molestie a iaculis. Nec ultrices dui sapien eget mi proin. Elementum nisi quis eleifend quam adipiscing vitae. Sit amet mauris commodo quis imperdiet massa tincidunt nunc.</p>
+        <p>Vulputate eu scelerisque felis imperdiet proin fermentum leo. Sed adipiscing diam donec adipiscing tristique risus nec feugiat in. Cursus turpis massa tincidunt dui ut ornare lectus sit. Consectetur purus ut faucibus pulvinar elementum integer. Mattis aliquam faucibus purus in. Vitae sapien pellentesque habitant morbi. Maecenas ultricies mi eget mauris pharetra. Rhoncus aenean vel elit scelerisque. In dictum non consectetur a erat nam at lectus urna. Vel elit scelerisque mauris pellentesque. Dui id ornare arcu odio ut sem nulla pharetra diam. Sem viverra aliquet eget sit amet tellus cras adipiscing. Posuere urna nec tincidunt praesent semper feugiat. At quis risus sed vulputate. Rutrum quisque non tellus orci ac auctor augue. Neque egestas congue quisque egestas diam in arcu cursus. Quis vel eros donec ac odio tempor orci dapibus.</p>
+      </div>
+    </div>
+  
+    <div class="sidebars">
+      <aside class="sidebar"> 
+        <h1>Cats in the news</h1>
+        <p>Why do they grab pompom in mouth and put in water dish?<a href="https://deziroo.com/blogs/pawsitive-connections/why-does-my-cat-put-toys-in-the-water-bowl">Why they drown toys</a></p>
+        <p>Why do they chew cords?<a href="https://www.webmd.com/pets/cats/what-to-do-if-my-cat-is-chewing-cords">Why they chew cords</a></p>
+        <!-- Add more content as needed -->
+      </aside> 
+
+      <aside class="sidebar">
+        <h2>Cat of the week</h2>
+        <img src="lesson04-mock3-sidebar-cat.jpg" 
+        srcset="lesson04-mock3-sidebar-cat-small.jpg 500w,
+                lesson04-mock3-sidebar-cat-medium.jpg 1000w,
+                lesson04-mock3-sidebar-cat-large.jpg 1500w"
+        alt="a small gray and white kitten with blue/gray eyes">
+        <p>This week's cat is Harold. He likes to stare at imaginary bugs, give love blinks and purr in your lap.</p>
+        <!-- Add more content as needed -->
+      </aside>
+    </div>
+  </div>
+  <footer>
+    <div class="logo">
+      <img src="lesson04-mock4-footer-image.jpg" alt="Four fluffy kittens looking forward, one is black, the others are multi-colored.">
+      <img class="additional-image" src="lesson04-mock5-cat-logo.png" alt="a logo of a cat outline">
+    </div>
+    <!-- Additional footer content -->
+</footer>
+</body>
+</html>
+</body>
+</html>
