@@ -1,6 +1,6 @@
 body {
-  background-color: #f8f8f8; /* Fallback color if gradients are not supported */
-  background-image: linear-gradient(to bottom, #ffffff, #f8f8f8); /* Gradient */
+  background-color: #f8f8f8; 
+  background-image: linear-gradient(to bottom, #ffffff, #f8f8f8); 
 }
 
 .container {
@@ -8,9 +8,9 @@ body {
   margin: 0 auto;
   padding: 20px;
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr; /* Three columns: 1/6 for sidebar, 3/6 for main content, 1/6 for sidebar */
-  grid-gap: 20px; /* Gap between grid items */
-  padding-bottom: 50px; /* Adjust as needed to leave space for the footer */
+  grid-template-columns: 1fr 3fr 1fr; 
+  grid-gap: 20px; 
+  padding-bottom: 50px; 
 }
 
 nav {
@@ -36,16 +36,16 @@ nav a {
 }
 
 .sidebars {
-  display: grid; /* Change to grid */
-  grid-template-columns: 1fr; /* Set to one column for small screens */
-  grid-gap: 20px; /* Gap between sidebars */
+  display: grid; 
+  grid-template-columns: 1fr; 
+  grid-gap: 20px; 
 }
 
 .sidebar {
   background-color: #f2f2f2;
   padding: 20px;
   box-shadow: 0 0 10px rgba(26, 26, 26, 0.1);
-  width: 100%; /* Ensure the sidebars take full width */
+  width: 100%; 
 }
 
 .background-container {
@@ -53,7 +53,7 @@ nav a {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 20px; /* Add padding as needed */
+  padding: 20px; 
 }
 
 :focus {
